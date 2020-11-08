@@ -1,5 +1,81 @@
 #calculator{
-height:10px;
-width:10px;
-text-align:center;
+	display:grid;
+grid-template-columns:1fr 1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:
+  "cals cals cals cals"
+  "one two three add"
+  "four five six sub"
+  "seven eight nine mul"
+  "zero clear equal div"
+  "storage storage storage storage"
+  ;
+height:250px;
+width:250px;
+
+}
+#display{
+	grid-area:cals; 
+text-align:right;
+  border:3px groove red;
+font-size:30px;
+}
+
+#zero{
+	grid-area:zero;
+}
+#one{
+	grid-area:one;
+}
+
+#two{
+	grid-area:two;
+}
+
+#three{
+	grid-area:three;
+}
+
+#four{
+	grid-area:four;
+}
+
+#five{
+	grid-area:five;
+}
+#six{
+  grid-area:six;
+}
+#seven{
+  grid-area:seven;
+}
+#eight{
+  grid-area:eight;
+}
+
+#nine{
+  grid-area:nine;
+}
+#add{
+  grid-area:add;
+}
+
+#sub{
+  grid-area:sub;
+}
+#mul{
+  grid-area:mul;
+}
+#div{
+  grid-area:div;
+}
+
+#clear{
+  grid-area:clear;
+}
+#equal{
+  grid-area:equal;
+}
+#storage{
+  grid-area:storage;
 }
